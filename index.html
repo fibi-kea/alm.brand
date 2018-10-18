@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alm. Brand</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        h1,h2,h3 {
+             font-family: 'Work Sans', sans-serif;
+        }
+
+
+        h1 {
+            font-size: 5.3vw;
+        }
+
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.95);
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            top: 0;
+        }
+
+        .nav_container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo_container img {
+            max-width: 40px;
+            margin: 6px 0;
+            margin-left: 10px;
+        }
+
+        nav a {
+            color: #00b9ea;
+            text-decoration: none;
+            padding: 15px;
+            font-family: 'Work Sans', sans-serif;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+  /*              footer {
+            background-color: #032846;
+            padding: 10px;
+        }
+
+        #footer_container {
+            display: flex;
+            justify-content: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Work Sans', sans-serif;
+            cursor: pointer;
+            padding: 10px;
+        }*/
+
+        .ligelinje {
+            width: 80px;
+            background-color: #00b9ea;
+            height: 2px;
+            border: none;
+            margin: 1.5rem auto 1.4rem;
+        }
+         /*Velkommen til Alm. Brand starter*/
+        #velkommen {
+            background-color: #032846;
+            padding: 10px;
+            margin: 50px 10px 10px 10px;
+
+        }
+
+        #velkommen h1 {
+            text-align: center;
+            color: white;
+            max-width: 200px;
+            margin: auto;
+
+        }
+
+        #velkommen p {
+            margin: 10px;
+            line-height: 1.6;
+            font-family: 'Work Sans', sans-serif;
+            color: white;
+        }
+
+        #velkommen a {
+            color: #00b9ea;
+            text-decoration: none;
+        }
+
+        #velkommen a:hover {
+            text-decoration: underline;
+        }
+
+        /*Velkommen til Alm. Brand Slutter*/
+
+        /*Vi giver økonomisk rådgivning starter*/
+
+
+
+        #koncept h2 {
+            text-align: center;
+        }
+
+        #koncept p {
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.6;
+            margin: 10px;
+        }
+
+        #koncept .kontaktos {
+            border: 6px solid #a2daf4;
+            color: #fff;
+            background-color: #00b9ea;
+            border-radius: 2em;
+            height: 60px;
+            min-width: 150px;
+            font-size: 1.1em;
+            cursor: pointer;
+            font-family: 'Work Sans', sans-serif;
+            margin-top: 15px;
+
+        }
+
+        #koncept button:hover {
+            background-color: #032846;
+            border: 6px solid #00b9ea;
+        }
+
+        .knap_container {
+            text-align: center;
+        }
+         /*Vi giver økonomisk rådgivning Slutter*/
+
+        /*Fordele STARTER*/
+
+        #fordele {
+            font-family: 'Work Sans', sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+        }
+
+        #fordele h2 {
+            text-align: center;
+        }
+
+        #fordele p {
+            margin: 10px;
+        }
+
+        #fordele ul li{
+            padding: 5px;
+        }
+
+        /*Fordele SLUTTER */
+
+
+        /* Lån penge med omtanke Starter*/
+
+        #lånpenge {
+             background-color: #d9effa;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #lånpenge h2 {
+            text-align: center;
+        }
+
+        #lånpenge p {
+             font-family: 'Work Sans', sans-serif;
+        }
+
+        /* Lån penge Slider Starter*/
+
+        .slidecontainer {
+    width: 100%;
+}
+
+    .DKK_slider {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 15px;
+    border-radius: 5px;
+    background: #032846;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+    .mdr_slider {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 15px;
+    border-radius: 5px;
+    background: #032846;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+    .DKK_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #00b9ea;
+    cursor: pointer;
+}
+            .mdr_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #00b9ea;
+    cursor: pointer;
+}
+
+        /*Lån penge slider slutter*/
+
+            #lånpenge .lån_nu {
+            border: 6px solid #a2daf4;
+            color: #fff;
+            background-color: #00b9ea;
+            border-radius: 2em;
+            height: 60px;
+            min-width: 150px;
+            font-size: 1.1em;
+            cursor: pointer;
+            font-family: 'Work Sans', sans-serif;
+            margin-top: 15px;
+        }
+
+        #lånpenge .lån_penge_nu_p {
+            text-align: center;
+        }
+        #lånpenge button:hover {
+            background-color: #032846;
+            border: 6px solid #00b9ea;
+        }
+
+        /*Lån penge med omtanke slutter*/
+
+        /* PAS PÅ STARTER */
+
+        #pas_på {
+            background-color: #d9effa;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #pas_på h2 {
+            text-align: center;
+        }
+
+        #pas_på p {
+            font-family: 'Work Sans', sans-serif;
+
+            margin: 10px;
+            line-height: 1.6em;
+        }
+        /* PAS PÅ SLUTTER */
+
+        #search {
+            display: none;
+        }
+
+        /*Modal VIEW STARTER*/
+
+        #modal {
+            background-color: rgba(3, 40, 70, 0.87);
+            opacity: 0;
+            width: 100vw;
+            height: 160vw;
+            top: 50px;
+            position: fixed;
+            color: #fff;
+            padding-top: 10vw;
+            display: none;
+            text-align: center;
+        }
+
+        #modal.vis {
+           display: block;
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .modal_knap {
+             border: 6px solid #a2daf4;
+            color: #fff;
+            background-color: #00b9ea;
+            border-radius: 2em;
+            height: 60px;
+            min-width: 150px;
+            font-size: 1.1em;
+            cursor: pointer;
+            font-family: 'Work Sans', sans-serif;
+            margin-top: 15px;
+
+        }
+
+        .modal_knap:hover {
+             background-color: #032846;
+            border: 6px solid #00b9ea;
+        }
+
+        .modal_input {
+            border: none;
+            width: 100vw;
+            background-color: transparent;
+            border-bottom-style: solid;
+            border-bottom-width: 2px;
+            border-bottom-color: white;
+            font-size: 1.5em;
+            font-family: 'Work Sans', sans-serif;
+            margin: 10px;
+        }
+
+        #modal h3 {
+            text-align: left;
+            margin-left: 10px;
+            margin-bottom: 1vw;
+        }
+
+        #modal .modal_lån_penge {
+              border: 6px solid #a2daf4;
+            color: #fff;
+            background-color: #00b9ea;
+            border-radius: 2em;
+            height: 60px;
+            min-width: 150px;
+            font-size: 1.1em;
+            cursor: pointer;
+            font-family: 'Work Sans', sans-serif;
+            margin-top: 15px;
+        }
+
+        #modal .modal_lån_penge:hover {
+            background-color: #032846;
+            border: 6px solid #00b9ea;
+        }
+        /*Modal VIEW SLUTTER*/
+
+        /* MODAL VIEW 2 STARTER */
+        #second_modal {
+            background-color: rgba(3, 40, 70, 0.87);
+            opacity: 0;
+            width: 100vw;
+            height: 160vw;
+            top: 50px;
+            position: fixed;
+            color: #fff;
+            padding-top: 10vw;
+            display: none;
+            text-align: center;
+            margin: 10px;
+        }
+
+        #second_modal.vis {
+           display: block;
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .second_modal_knap {
+             border: 6px solid #a2daf4;
+            color: #fff;
+            background-color: #00b9ea;
+            border-radius: 2em;
+            height: 60px;
+            min-width: 150px;
+            font-size: 1.1em;
+            cursor: pointer;
+            font-family: 'Work Sans', sans-serif;
+            margin-top: 15px;
+
+        }
+
+        .second_modal_knap:hover {
+             background-color: #032846;
+            border: 6px solid #00b9ea;
+        }
+
+        .modal_input {
+            border: none;
+            width: 90vw;
+            background-color: transparent;
+            border-bottom-style: solid;
+            border-bottom-width: 2px;
+            border-bottom-color: white;
+            font-size: 1.5em;
+            font-family: 'Work Sans', sans-serif;
+            margin: 10px;
+            margin-right: 1500px;
+        }
+
+        .situation_modal_input {
+            border: none;
+            width: 90vw;
+            background-color: transparent;
+            border-style: solid;
+            border-width: 2px;
+            border-color: white;
+            font-size: 1.5em;
+            font-family: 'Work Sans', sans-serif;
+            margin: 10px;
+            margin-right: 1500px;
+        }
+
+        #second_modal h3 {
+            text-align: left;
+            margin-left: 10px;
+            margin-bottom: 1vw;
+        }
+
+        #second_modal .second_modal_kontakt_mig {
+            border: 6px solid #a2daf4;
+            color: #fff;
+            background-color: #00b9ea;
+            border-radius: 2em;
+            height: 60px;
+            min-width: 150px;
+            font-size: 1.1em;
+            cursor: pointer;
+            font-family: 'Work Sans', sans-serif;
+            margin-top: 15px;
+        }
+
+        #second_modal .second_modal_kontakt_mig:hover {
+            background-color: #032846;
+            border: 6px solid #00b9ea;
+        }
+
+        /*MODAL VIEW 2 SLUTTER*/
+
+        .video {
+            width: 100%;
+        }
+
+        .video2 {
+            width: 100%;
+        }
+
+          .video3 {
+            width: 100%;
+        }
+
+        /*Footer starter*/
+        footer {
+            background-color: #032846;
+            padding: 10px;
+        }
+
+        #footer_container {
+            display: flex;
+            justify-content: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Work Sans', sans-serif;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        /*Footer Slutter */
+
+        @media only screen and (min-width: 600px) {
+            nav {
+            height: 5vw;
+            position: absolute;
+        }
+    }
+
+        @media only screen and (min-width: 1000px) {
+
+            .video_container {
+                display: flex;
+                justify-content: center;
+                margin: 20px;
+            }
+
+            .video {
+                width: 560px;
+                height: 315px;
+            }
+
+            .video_container2 {
+                display: flex;
+                justify-content: center;
+                margin: 20px;
+            }
+
+            .video2 {
+                width: 560px;
+                height: 315px;
+            }
+
+               .video_container3 {
+                display: flex;
+                justify-content: center;
+                margin: 20px;
+            }
+
+            .video3 {
+                width: 560px;
+                height: 315px;
+            }
+
+            .nav_container {
+                max-width: 600px;
+               margin: auto;
+                padding-left: 50px;
+            }
+
+        .logo_container img {
+            max-width: 150px;
+        }
+
+        nav a {
+            color: #00b9ea;
+            text-decoration: none;
+            padding: 40px;
+            font-family: 'Work Sans', sans-serif;
+            cursor: pointer;
+            font-size: 1.5vw;
+            margin: auto;
+
+        }
+
+        #velkommen {
+            max-width: 600px;
+            padding: 10px;
+            margin: auto;
+            margin-top: 155px;
+
+        }
+
+        #koncept {
+            max-width: 600px;
+            margin: auto;
+            }
+
+        #pas_på {
+            max-width: 600px;
+            margin: auto;
+            }
+
+            #fordele {
+            max-width: 600px;
+            margin: auto;
+            }
+
+         #lånpenge {
+            max-width: 600px;
+            margin: auto;
+            }
+
+            #modal {
+           max-width: 600px;
+            margin-left: 651.500px;
+            margin-right: 631.500px;
+            padding-top: 25px;
+            height: 45vw;
+            top: 60px;
+            }
+
+            .modal_input {
+                width: 30vw;
+            }
+
+            #second_modal {
+            max-width: 600px;
+            margin-left: 651.500px;
+            margin-right: 631.500px;
+            padding-top: 25px;
+            height: 45vw;
+                top: 0px;
+            }
+
+            .situation_modal_input {
+                width: 30vw;
+            }
+
+            #search {
+             margin: auto;
+            }
+
+            .search_place {
+                border: none;
+                background-color: transparent;
+                border-bottom: 1px solid #00b9ea;
+                font-size: 1vw;
+                font-family: 'Work Sans', sans-serif;
+            }
+
+            h1 {
+            font-size: 1.4vw;
+        }
+
+             #search {
+            display: block;
+        }
+    }
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+         <div class="nav_container">
+           <div class="logo_container">
+            <img src="alm.brand_logo.jpg" alt="Alm. Brand Logo">
+            </div>
+
+            <a href="#koncept">Rådgivning</a>
+            <a href="#lånpenge">Lån</a>
+            <a href="#kampagnevideo">Kampagnevideo</a>
+            <div id="search">
+                <input type="search" placeholder="Indtast søgning" class="search_place">
+            </div>
+    </div>
+
+
+        </nav>
+    </header>
+    <main>
+        <div id="velkommen">
+            <h1>Velkommen til Alm. Brand</h1>
+            <hr class="ligelinje">
+            <p>
+                Det tidligere Saxo Privatbank er nu en del af Alm. Brand. Sammen vil vi kunne tilbyde dig den service og kompetente rådgivning, du kender i dag, samtidig med at du får en række nye attraktive fordele. Indtil vi er kommet helt på plads, er dette website et midlertidigt parallel univers til <a href="https://www.almbrand.dk/">Alm. Brands normale website.</a>
+            </p>
+        </div>
+
+        <div id="koncept">
+            <h2>Vi giver økonomisk rådgivning</h2>
+            <hr class="ligelinje">
+            <p>
+                Hos os kan du få rådgivning om alt fra din daglige økonomi til lån, opsparing og investering.
+            </p>
+            <p>
+                Vi er ikke bange for at gøre tingene anderledes, når vi sammen med dig finder frem til de bedste løsninger. Med vores unikke tilgang til personlig rådgivning sørger vi for, at du får mest muligt ud af alle aspekter af din økonomi.
+            </p>
+            <p>
+                Du har allerede styr på din økonomi. Til gengæld kan du forvente, at vi gør alt, hvad vi kan for, at du får mest muligt ud af den.
+
+            </p>
+            <p class="knap_container">
+                <button class="kontaktos">Kontakt mig</button>
+            </p>
+        </div>
+
+        <div id="pas_på">
+            <h2>Pas på de hurtige &amp; dyre forbrugslån</h2>
+            <hr class="ligelinje">
+
+            <p>Når du er fyldt 18 år, får du mulighed for at låne penge, og faktisk har halvdelen af alle danskere mellem 18 og 29 år et lån*. Du kan bl.a. låne penge i banken eller tage et kviklån via nettet eller mobiltelefonen. Men vær opmærksom på hvor meget du i alt skal betale tilbage i kroner/øre - og på ÅOP på lånet.</p>
+
+            <p> ÅOP står for Årlige Omkostninger i Procent, og ÅOP fortæller med et enkelt tal, hvor dyrt lånet er. Ved at sammenligne ÅOP for forskellige lån på samme størrelse og med samme løbetid, kan du på den måde finde det billigste lån. Det lån, der har den laveste ÅOP er billigst.</p>
+
+            <p>Typisk har kviklån en høj ÅOP, derfor bør du overveje at vælge et banklån.</p>
+
+            <p>(Kilde: Finans Danmark, Unge, gæld & opsparing, 2018*)</p>
+        </div>
+
+        <div id="fordele">
+            <h2>Fordele som ung+ kunde</h2>
+            <hr class="ligelinje">
+            <p>Som ung+ kunde har du en række fordele, der gør din økonomi overskuelig og nem. Herunder kan du et udsnit af fordelene: </p>
+            <ul>
+                <li>Visa/Dankort og Mastercard Debit til 0 kr. i årligt kortgebyr.</li>
+                <li>Samme pinkode til alle dine kort.</li>
+                <li>Mulighed for at hæve og indsætte kontanter uden gebyr i andre bankers automater.</li>
+                <li>Netbank og Mobilbank uden gebyr.</li>
+                <li>Mulighed for at oprette en kassekredit uden etableringsgebyr.</li>
+            </ul>
+        </div>
+
+        <div id="lånpenge">
+            <h2>Lån penge med omtanke</h2>
+            <hr class="ligelinje">
+            <p>Vi tilbyder med Ung+ en rigtig god rente på bare 7 %*, hvis du ønsker en kassekredit eller et forbrugslån.</p>
+            <p><b>Lånebeløb: <span class="value">5000 DKK</span></b></p>
+            <div class="slidecontainer">
+                <input type="range" min="5000" max="100000" value="5000" step="500" class="DKK_slider" id="myRanger1">
+            </div>
+            <p><b>Løbetid: <span class="løbetid">6 mdr.</span></b></p>
+            <div class="slidecontainer">
+                <input type="range" min="6" max="60" value="6" step="1" class="mdr_slider" id="myRanger2">
+            </div>
+            <div class="tilbagebetaling">
+                <p><b>Låne omkostning: <span class="tillæg">630 DKK</span></b></p>
+                <p><b>Tilbagebetaling: <span class="payBack">5630 DKK</span></b></p>
+            </div>
+            <p class="lån_penge_nu_p">
+                <button class="lån_nu">Lån nu</button>
+            </p>
+        </div>
+    <div class="video_container">
+        <iframe class="video" src="https://www.youtube.com/embed/CqpyJFS44nA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+        </div>
+
+        <div class="video_container2">
+              <iframe class="video2" src="https://www.youtube.com/embed/HJy8yWsAu2Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <div class="video_container3">
+            <iframe src="https://www.youtube.com/embed/oCoZ2nEYbVQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <!-- Modal VIEW STARTER -->
+        <div id="modal">
+            <button class="modal_knap">Close</button>
+            <div class="modal_content">
+                <h2>Lån penge med omtanke</h2>
+                <h3>Fulde navn</h3>
+                <input type="text" placeholder="Indtast dit fulde navn" class="modal_input">
+                <h3>CPR-nummer</h3>
+                <input type="text" placeholder="dd-mm-åå-xxxx" class="modal_input">
+                <h3>E-mail</h3>
+                <input type="text" placeholder="Indtast din E-mail" class="modal_input">
+                <h3>Telefon</h3>
+                <input type="text" placeholder="Indtast dit telefonnummer" class="modal_input">
+                <h3>Postnummer &amp; by</h3>
+                <input type="text" placeholder="Indtast dit postnummer & by" class="modal_input">
+            </div>
+            <button class="modal_lån_penge">Lån</button>
+        </div>
+        <!-- Modal VIEW SLUTTER -->
+
+        <!-- SECOND Modal VIEW STARTER -->
+
+        <div id="second_modal">
+            <button class="second_modal_knap">Close</button>
+            <div class="second_modal_content">
+                <h2>Skal vi kontakte dig?</h2>
+                <h3>Fulde navn</h3>
+                <input type="text" placeholder="Indtast dit fulde navn" class="modal_input">
+                <h3>E-Mail</h3>
+                <input type="text" placeholder="Indtast din E-mail" class="modal_input">
+                <h3>Telefon</h3>
+                <input type="text" placeholder="Indtast dit telefonnummer" class="modal_input">
+                <h3>Situation?</h3>
+                <textarea rows="4" cols="50" class="situation_modal_input">
+
+                </textarea>
+            </div>
+            <button class="second_modal_kontakt_mig">Kontakt mig</button>
+        </div>
+
+
+        <!-- SECOND Modal VIEW SLUTTER -->
+
+    </main>
+    <footer>
+        <hr>
+        <div id="footer_container">
+            <a href="https://www.facebook.com/almbrand">Facebook</a>
+            <a href="https://www.instagram.com/almbrand/?hl=da">Instagram</a>
+            <a href="https://twitter.com/alm_brand">Twitter</a>
+        </div>
+    </footer>
+
+    <script>
+        let modal = document.querySelector("#modal");
+        let secondModal = document.querySelector("#second_modal");
+        let månedlig;
+        let beløb;
+        var percent = 0.07;
+
+
+        document.querySelector(".DKK_slider").addEventListener("input", showValue);
+        document.querySelector(".mdr_slider").addEventListener("input", showValue);
+
+        function showValue() {
+
+            beløb = document.querySelector("#myRanger1");
+
+            document.querySelector(".value").textContent = beløb.value + " DKK";
+
+            console.log(beløb.value);
+
+            månedlig = document.querySelector("#myRanger2")
+
+            document.querySelector(".løbetid").textContent = månedlig.value + " mdr.";
+
+            console.log(månedlig.value);
+
+            var x = parseInt(beløb.value);
+            let result = (beløb.value * percent) / (1 - Math.pow(1 + percent, -månedlig.value));
+            console.log(result);
+            document.querySelector(".payBack").textContent = Math.round(result) + x + " DKK";
+            document.querySelector(".tillæg").textContent = Math.round(result) + " DKK";
+
+        }
+
+        //FIRST MODAL VIEW (lån nu knap)
+        document.querySelector(".lån_nu").addEventListener("click", visModal);
+
+        //functionen visModal
+        function visModal() {
+            modal.classList.add("vis");
+            modal.querySelector(".modal_knap").addEventListener("click", skjulModal);
+        }
+        //Skjul modal view
+        function skjulModal() {
+            modal.classList.remove("vis");
+        }
+
+        document.querySelector(".kontaktos").addEventListener("click", visSecondModal);
+
+        //functionen visSecondModal
+        function visSecondModal() {
+            console.log("test");
+            secondModal.classList.add("vis");
+            secondModal.querySelector(".second_modal_knap").addEventListener("click", skjulSecondModal);
+        }
+
+        //functionen skjulSecondModal
+        function skjulSecondModal() {
+            secondModal.classList.remove("vis");
+        }
+
+    </script>
+</body>
+
+</html>
